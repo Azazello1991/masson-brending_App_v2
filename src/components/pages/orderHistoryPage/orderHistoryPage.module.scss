@@ -57,6 +57,7 @@
   @extend %montserratAlternates-500 !optional;
   width: fit-content;
   margin: 0 auto;
+  border: 1px solid transparent;
   text-align: center;
   padding: 17px 70px;
   color: $accent;
@@ -64,6 +65,12 @@
   background-color: #111111;
   transform: skewX(-10deg);
   margin-bottom: 50px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $accent;
+  }
 
   &::before {
     content: "";

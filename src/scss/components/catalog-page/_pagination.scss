@@ -1,13 +1,18 @@
 .pagination {
   display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: 20px;
+
+  @include r(768) {
+    column-gap: 10px;
+  }
 
   .previous a,
   .next a {
     background-color: transparent;
   }
-  
+
   a {
     position: relative;
     display: flex;
@@ -22,6 +27,12 @@
     background-color: #252525;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+
+    @include r(768) {
+      width: 35px;
+      height: 35px;
+      font-size: 18px;
+    }
 
     &:hover {
       background-color: $accent;
@@ -47,6 +58,12 @@
     font-size: 32px;
     @extend %montserrat-700;
     color: #252525;
+
+    @include r(768) {
+      width: 45px;
+      height: 45px;
+      font-size: 18px;
+    }
   }
   .previous.disabled a,
   .next.disabled {

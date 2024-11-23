@@ -15,6 +15,10 @@
     padding: 10px 30px;
     margin-top: -75px;
 
+    @include r(768) {
+      margin-top: 0;
+    }
+
     &.show {
       background-color: $bgColor;
       padding: 10px 30px;
@@ -28,7 +32,8 @@
 
   &__top {
     display: flex;
-    justify-content: space-between;
+    column-gap: 15px;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 12px;
   }

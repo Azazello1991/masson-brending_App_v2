@@ -49,18 +49,19 @@
     @extend %montserrat-700;
 
     @include r(992) {
-      font-size: 48px;
+      font-size: 34px;
     }
 
     @include r(576) {
-      font-size: 38px;
+      font-size: 28px;
+      text-align: center;
     }
   }
 
   &__subtitle {
     font-size: 24px;
     @extend %montserrat-400;
-    color: $silverLight;
+    color: $accent;
     margin-bottom: 10px;
   }
 
@@ -96,10 +97,6 @@
     justify-content: center;
   }
 
-  &__filter {
-    column-gap: 0px;
-  }
-
   &__filter-subtitle {
     font-size: 16px;
     @extend %montserrat-400;
@@ -127,6 +124,10 @@
     background-color: $bgColor;
     color: $accent;
     width: fit-content;
+
+    @include r(768) {
+      padding: 10px 40px;
+    }
   }
 
   &__label-like {
@@ -194,8 +195,11 @@
     align-items: center;
     column-gap: 30px;
     margin-bottom: 45px;
+    padding: 10px 0;
+    border-top: 1px solid $accent;
 
     @include r(768) {
+      justify-content: space-between;
       margin-bottom: 20px;
     }
   }
@@ -209,6 +213,10 @@
     background-color: $bgColor;
     color: $accent;
     width: fit-content;
+
+    @include r(568) {
+      padding: 10px 15px;
+    }
   }
 
   &__form-subtitle {

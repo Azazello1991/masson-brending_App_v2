@@ -38,7 +38,7 @@ const initialState = {
 export const fetchPizzasRes = createAsyncThunk(
   "pizza/fetchPizzaStatus",
   async (params) => {
-    const { category, sortBy, order, search, currentPage } = params; //Витягуємм параметри через деструктуризацію
+   
 
     const { data } = await axios.get( // робимо запит
       `https://6633b2a9f7d50bbd9b4a6103.mockapi.io/items`

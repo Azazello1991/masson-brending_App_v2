@@ -1,6 +1,6 @@
 
 .burger {
-  width: $burgerWidth; //указываем ширину линий
+  min-width: $burgerWidth; //указываем ширину линий
   height: $burgerHeight; //указываем высоту линий
   position: relative;
   z-index: 1;

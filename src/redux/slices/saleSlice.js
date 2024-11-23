@@ -1,5 +1,4 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import examplePhoto from "../../images/example/example_1.webp";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   dataSlider: [

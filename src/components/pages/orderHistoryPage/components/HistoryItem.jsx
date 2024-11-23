@@ -53,7 +53,7 @@ const HistoryItem = ({ product, item }) => {
             width={150}
             src={productUrl}
             loading="lazy"
-            alt="photo product"
+            alt="photo"
           />
         </div>
         <div className={styles.product__data}>

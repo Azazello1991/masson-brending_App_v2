@@ -1,5 +1,5 @@
 import React from "react";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,7 +10,7 @@ import {
   A11y,
   Autoplay,
 } from "swiper/modules";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import Card from "../galleryComponents/Card";
 import { useTranslation } from "react-i18next";
 
