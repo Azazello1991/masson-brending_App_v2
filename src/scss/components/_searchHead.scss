@@ -1,7 +1,6 @@
 .container-btn {
   display: block;
   max-width: 250px;
-  margin-left: 2em;
   height: 100%;
   outline: none;
 }
@@ -18,19 +17,19 @@
   &:hover,
   &:focus,
   &:focus-within {
-    width: 10em;
+    width: 8.5em;
     border-radius: 5px 2em 2em 5px;
     outline: none;
 
-    .button {
-      // Стилі для кнопки при розширенні контейнера, якщо потрібно
-    }
-
     input {
       display: inline-block;
-      width: 16em;
+      width: 14em;
       padding: 10px;
     }
+  }
+
+  .search-container:hover ~ & {
+    margin-left: 2em;
   }
 
   input {

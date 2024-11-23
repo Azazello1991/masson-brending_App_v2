@@ -15,7 +15,7 @@ i18n
       en: { translation: en },
       uk: { translation: uk }
     },
-    fallbackLng: 'en',  // Язык по умолчанию
+    fallbackLng: 'uk',  // Язык по умолчанию
     debug: true,
     interpolation: {
       escapeValue: false  // React сам защищает от XSS

@@ -1,7 +1,7 @@
 import React from "react";
 import StarRatings from "react-star-ratings";
 // redux
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 const Comments = () => {
   const { comments } = useSelector((state) => state.commentsProductSlice);

@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import React, { useState, useEffect, useRef } from "react";
 import Logo from "../images/logo-masons-shop.svg";
 import Categorys from "./headerComponents/Categorys";
@@ -11,7 +11,6 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeBurger, setActiveBurger] = useState(false);
   const [show, setShow] = useState(false);
-  const [margin, setMargin] = useState("-80px");
   const headerRef = useRef(null);
 
   // Поява меню-бургер в залежності від шерени екрану

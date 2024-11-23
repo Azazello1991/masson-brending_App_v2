@@ -3,14 +3,12 @@
   align-items: center;
   column-gap: 15px;
   max-width: 550px;
-/*   min-width: 325px; */
   margin-bottom: 50px;
 
   &__inner {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 0 15px;
     height: 33px;
   }
 
@@ -129,8 +127,7 @@
     background-color: $accent;
     transform: skewX(-15deg);
     width: 115px;
-    height: 33px;
-    margin: 0 15px;
+    height: 35px;
   }
 
   &__btn {

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReactPaginate from "react-paginate";
 // redux
 import { useDispatch, useSelector } from "react-redux";
@@ -14,7 +14,7 @@ export const PaginationReactGallery = () => {
       breakLabel="..."
       nextLabel=">"
       onPageChange={(event) => dispatch(setPagination(event))} // через redux
-      pageRangeDisplayed={4}
+      pageRangeDisplayed={2}
       pageCount={pagesQuantity}
       previousLabel="<"
       renderOnZeroPageCount={null}

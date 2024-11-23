@@ -13,7 +13,7 @@ const BreadCrumbsHistory = () => {
         <Link className="bread-crumbs__item" to={'/gallery'}>
           { t('historyPage.breadcrumbs.gallery')}
         </Link>
-        <a className="bread-crumbs__item">{ t('historyPage.breadcrumbs.profile')}</a>
+        <a className="bread-crumbs__item" href='#'>{ t('historyPage.breadcrumbs.profile')}</a>
       </div>
     </div>
   )

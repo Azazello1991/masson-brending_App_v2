@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 // redux
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector} from "react-redux";
 
 const Cabinet = () => {
   const { historyItems, favoriteItems } = useSelector(
@@ -18,6 +18,13 @@ const Cabinet = () => {
     i18n.changeLanguage(lng);
     setLg(lng); // Метод для зміни мови
   };
+
+  // якщо в local Storage не має даних, то по замовчуванню:
+  useEffect(() => {
+    if (lg !== 'en' && lg !== 'uk') {
+      setLg("uk");
+    }
+  }, [lg]);
 
   return (
     <div className="header__nav-top">
@@ -51,7 +58,10 @@ const Cabinet = () => {
           title="Кошик"
           aria-label="Кошик"
         >
-          <span className="header__quantity" aria-label="Килькисть товару в кошику">
+          <span
+            className="header__quantity"
+            aria-label="Килькисть товару в кошику"
+          >
             {purchases.length}
           </span>
         </Link>
